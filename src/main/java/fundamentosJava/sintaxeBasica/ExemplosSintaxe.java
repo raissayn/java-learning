@@ -1,4 +1,4 @@
-package sintaxeBasica;
+package fundamentosJava.sintaxeBasica;
 
 public class ExemplosSintaxe {
     public static void main(String[] args) {

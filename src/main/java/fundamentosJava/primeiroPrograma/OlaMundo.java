@@ -1,4 +1,4 @@
-package primeiroPrograma;
+package fundamentosJava.primeiroPrograma;
 
 public class OlaMundo {
     public static void main(String[] args) {
