@@ -23,6 +23,7 @@ public class ExemplosSintaxe {
         // Textos = Strings
         String nome = "Raissa";
         System.out.println("O nome é: " +nome);
+
         // Boolean -> true or false
         boolean ehMaior = idade > 18;
         System.out.println("Eu sou maior de idade? " + ehMaior);
