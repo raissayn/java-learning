@@ -40,6 +40,69 @@ public class ExemplosControle {
         System.out.println("x == y: "+ (x == y));
         System.out.println("x != y: "+ (x!=y));
 
+        boolean o = true;
+        if(o){
+            System.out.println("É verdadeiro");
+        }
 
+        //Operadores lógicos
+        // &&, ||, !
+
+        boolean temDinheiro = true;
+        boolean temTempo = true;
+
+        if(temDinheiro && temTempo){
+            System.out.println("Pode viajar");
+        } else {
+            System.out.println("não pode viajar");
+        }
+
+        // LOOPS - While e For
+        // FOCO em FOR - repetir algo até uma condição ser atingida
+        int contador = -1;
+        while(contador <= 5){
+            System.out.println("Contador: " + contador);
+            contador++;
+        } // interação = cada passagem pela estrutura do loop
+        for(int i = 1; i <= 5; i++){
+            System.out.println("VALOR i : " + i);
+        }
+
+        // EXEMPLOS PRÁTICOS
+        // analise numerica
+        int [] numeros = {1,2,3,4,5,6,7,8,9};
+        int somaPar = 0;
+        int somaImpar = 0;
+        // como eu vou chamar a unidade da minha lista
+        for(int num : numeros){
+            if( num % 2 == 0){
+                somaPar += num;
+            }else{
+                somaImpar += num;
+            }
+            // identificar se um número é multiplo de 3
+            if( num % 3 == 0){
+                System.out.println("O numero" + num + "é multiplo de 3");
+            }
+            if( num > 5 && num < 7){
+                System.out.println("O número está entre 5 e 7" + num );
+            }
+        }
+
+        System.out.println("A soma dos pares é: "+ (somaPar));
+        System.out.println("A soma dos impares é: "+ (somaImpar));
+
+
+        // break => ejetar o loop
+        // continue => pular uma execução
+        // vars temporarios dos loops, elas podem repetir o nome
+        for(int i = 1; i<=10; i++ ){
+            if( i == 2 ){
+                continue;
+            }else if (i == 5){
+                break;
+            }
+            System.out.println("i: " + i);
+        }
     }
 }
