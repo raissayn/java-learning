@@ -1,4 +1,4 @@
-package poo;
+package fundamentosJava.poo;
 
 public class ProgramaPrincipal {
 }

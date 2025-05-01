@@ -1,0 +1,25 @@
+1) tipos primitivos
+byte, short, int, long, float, double, char, boolean
+
+2) variáveis
+tipo nome = valor;
+
+3) operadores (os mesmos de outras linguagens kkk)
+Ariteméticos, Relacionais, Lógicos.
+
+-------
+Scanner em Java
+necessário importar:import java.util.Scanner;
+você cria um objeto Scanner ligado ao teclado: Scanner scanner = new Scanner(System.in);
+"Crie um novo leitor de dados (Scanner) que vai ler aquilo que o usuário digitar no teclado (System.in)."
+
+A partir daí, podemos usar métodos como:
+nextInt() =	Um número inteiro (int)  -	int idade = scanner.nextInt();
+nextDouble() =	Um número com ponto (double)  -	double altura = scanner.nextDouble();
+next() =	Uma palavra (até espaço)  - 	String nome = scanner.next();
+nextLine() =	Uma linha completa (com espaços)  -	String frase = scanner.nextLine();
+next().charAt(0) =	Um único caractere (char)  -	char letra = scanner.next().charAt(0);
+
+Sempre que possível, feche o Scanner com scanner.close(); ao final do programa.
+-------
+Estruturas de controle
