@@ -23,3 +23,107 @@ next().charAt(0) =	Um único caractere (char)  -	char letra = scanner.next().cha
 Sempre que possível, feche o Scanner com scanner.close(); ao final do programa.
 -------
 Estruturas de controle
+-  decisões sejam tomadas (if, switch)
+-  ações sejam repetidas (while, for)
+
+if (condição) {
+    // código se for verdadeiro
+} else {
+    // código se for falso (opcional)
+}
+
+switch (variavel) {
+    case valor1:
+        // código
+        break;
+    case valor2:
+        // código
+        break;
+    default:
+        // se nenhum dos casos anteriores for verdadeiro
+}
+while (condição) {
+    // repete enquanto a condição for verdadeira
+}
+for (inicialização; condição; incremento) {
+    // código a ser repetido
+}
+
+---------
+Métodos: definição, parâmetros, retorno
+Métodos são blocos de código que realizam uma tarefa específica.
+Eles são usados para organizar o programa, evitar repetição e facilitar a leitura.
+
+tipoDeRetorno nomeDoMetodo(parâmetros) {
+    // corpo do método
+    return valor;
+}
+    EX:public static int somar(int a, int b) {
+           int resultado = a + b;
+           return resultado;
+       }
+
+Parâmetros: são variáveis usadas para enviar informações para o método
+public static void exibirMensagem(String nome) {
+    System.out.println("Olá, " + nome);
+}
+Retorno: um método pode retornar um valor, ou não retornar nada.
+public static int dobrar(int numero) {
+    return numero * 2;
+}
+public static void mostrarMensagem() {
+    System.out.println("Bem-vindo!");
+}
+-> utilzamos void porque ele não retorna valor, só exibe algo
+
+Como CHAMAR(usar) um método
+int resultado = somar(5, 3); // resultado agora vale 8
+mostrarMensagem();           // imprime no console
+
+EXEMPLO COMPLETO: public class Calculadora {
+
+                     // método que soma
+                     public static int somar(int a, int b) {
+                         return a + b;
+                     }
+
+                     // método que imprime mensagem
+                     public static void saudacao(String nome) {
+                         System.out.println("Olá, " + nome);
+                     }
+
+                     public static void main(String[] args) {
+                         saudacao("Carlos");                   // imprime Olá, Carlos
+                         int total = somar(10, 5);             // total = 15
+                         System.out.println("Resultado: " + total);
+                     }
+                 }
+-----------
+Classes e Objetos: conceitos iniciais
+Uma classe é um modelo (ou molde) para criar objetos. Pense nela como uma forma de bolo: ela define como o bolo será, mas não é o bolo em si.
+Um objeto é uma instância real da classe. Se a classe é a forma de bolo, o objeto é o bolo feito com ela.
+
+    EX:public class Pessoa {
+           String nome;
+           int idade;
+
+           void apresentar() {
+               System.out.println("Olá, meu nome é " + nome + " e tenho " + idade + " anos.");
+           }
+       }
+ Essa classe define:
+    Atributos: nome e idade (as características da pessoa).
+    Método: apresentar() (o comportamento da pessoa).
+
+    public class Main {
+        public static void main(String[] args) {
+            Pessoa p1 = new Pessoa();     // cria o objeto p1 do tipo Pessoa
+            p1.nome = "Maria";
+            p1.idade = 25;
+            p1.apresentar();              // chama o método
+        }
+    }
+Objeto: Uma instância da classe, com dados reais.
+Pessoa p1 = new Pessoa(); → cria um objeto chamado p1
+p1.nome = "Maria"; → define o nome
+p1.apresentar(); → chama o comportamento da classe
