@@ -127,3 +127,43 @@ Objeto: Uma instância da classe, com dados reais.
 Pessoa p1 = new Pessoa(); → cria um objeto chamado p1
 p1.nome = "Maria"; → define o nome
 p1.apresentar(); → chama o comportamento da classe
+
+-----------
+Main, construtores e atributos
+Main: ponto de entrada de um programa Java
+    public static void main(String[] args) {
+        // código aqui
+    }
+public: significa que o método pode ser acessado de qualquer lugar.
+static: indica que esse método não precisa de um objeto para ser executado.
+void: significa que o método não retorna nada.
+main: nome do método.
+String[] args: parâmetro que permite passar argumentos pela linha de comando.
+
+Construtores: é um método especial usado para criar objetos de uma classe.
+Tem o mesmo nome da classe. Não tem tipo de retorno, nem void. Pode ter parâmetros ou não.
+public class Pessoa {
+    String nome;
+
+    // Construtor
+    public Pessoa(String nomeRecebido) {
+        nome = nomeRecebido;
+    }
+}
+public class Pessoa {
+    String nome;
+    int idade;
+
+    // Construtor que recebe nome e idade
+    public Pessoa(String n, int i) {
+        nome = n;
+        idade = i;
+    }
+}
+
+Atributos: são as características ou informações de um objetos/ Variáveis de instância.
+public class Carro {
+    String cor;
+    int ano;
+} // COR E ANO SÃO ATRIBUTOS
+
