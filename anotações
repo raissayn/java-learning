@@ -167,3 +167,76 @@ public class Carro {
     int ano;
 } // COR E ANO SÃO ATRIBUTOS
 
+---------------------
+Encapsulamento: private, public, getters/setters
+
+private String nome;
+private: Esconde o atributo ou método de fora da classe.
+Só pode ser acessado dentro da própria classe.
+Usado para proteger os dados.
+
+public String getNome() {
+    return nome;
+}
+public: Permite que qualquer parte do programa possa acessar aquele atributo ou método.
+Em atributos, é perigoso. Mas é muito comum em métodos (como get e set).
+
+Getters e Setters:Já que private bloqueia o acesso direto, usamos métodos get e set para acessar e modificar os dados de forma controlada.
+
+Getter (pegar valor):
+public String getNome() {
+    return nome;
+}
+Setter (alterar valor):
+public void setNome(String novoNome) {
+    nome = novoNome;
+}
+EXEMPLO COMPLETO COM EXPLICAÇÃO:
+public class Aluno {
+    // Atributos encapsulados (privados)
+    private String nome;
+    private int idade;
+
+    // Construtor
+    public Aluno(String nome, int idade) {
+        this.nome = nome;
+        this.idade = idade;
+    }
+
+    // Getter para nome
+    public String getNome() {
+        return nome;
+    }
+
+    // Setter para nome
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    // Getter para idade
+    public int getIdade() {
+        return idade;
+    }
+
+    // Setter para idade
+    public void setIdade(int idade) {
+        this.idade = idade;
+    }
+}
+NO MAIN:
+public class Principal {
+    public static void main(String[] args) {
+        Aluno a = new Aluno("Lucas", 22);
+
+        // Usando getter
+        System.out.println("Nome: " + a.getNome());
+        System.out.println("Idade: " + a.getIdade());
+
+        // Alterando com setter
+        a.setNome("Marina");
+        a.setIdade(20);
+
+        System.out.println("Novo Nome: " + a.getNome());
+        System.out.println("Nova Idade: " + a.getIdade());
+    }
+}
