@@ -240,3 +240,5 @@ public class Principal {
         System.out.println("Nova Idade: " + a.getIdade());
     }
 }
+----------------------------------------
+\n corta linha
