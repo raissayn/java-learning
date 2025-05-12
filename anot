@@ -11,4 +11,38 @@ Explicação:
     : → separa as duas possibilidades;
 
     "Fechado" → é o valor retornado se this.aberto for false.
+-------------------------------------------------
+private é quem só pode mexer é a própria classe.
 
+GETTERS E SETTERS
+Getters → "pegam" valores de atributos;
+
+Setters → "definem" valores de atributos;
+
+Imagine que temos um atributo privado (ou seja, ninguém pode acessar diretamente fora da classe). A gente não quer deixar todo mundo mexer nele direto, pra proteger os dados.
+
+Então, ao invés de fazer isso:
+c1.modelo = "BIC";
+
+Usamos:
+c1.setModelo("BIC");
+System.out.println(c1.getModelo());
+
+ Exemplo completo com modelo
+
+public class Caneta {
+    private String modelo;
+
+    public String getModelo() {
+        return this.modelo;
+    }
+
+    public void setModelo(String modelo) {
+        this.modelo = modelo;
+    }
+}
+
+Uso:
+Caneta c1 = new Caneta();
+c1.setModelo("BIC");
+System.out.println("Modelo da caneta: " + c1.getModelo());
