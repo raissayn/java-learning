@@ -1,0 +1,14 @@
+(this.aberto ? "Aberto" : "Fechado")
+
+Explicação:
+
+    this.aberto → é uma condição (pode ser true ou false);
+
+    ? → significa: "se for verdadeiro";
+
+    "Aberto" → é o valor retornado se this.aberto for true;
+
+    : → separa as duas possibilidades;
+
+    "Fechado" → é o valor retornado se this.aberto for false.
+
