@@ -1,0 +1,13 @@
+Classe ContaBanco
+atributos numConta
+          tipo (cc ou cp)
+          dono
+          saldo
+          status (aberta ou fechada)
+
+metodos abrirConta() (true or false) (corrente ganha 50 reais / poupança 150 reais)
+        fecharConta() (saldo == 0 e não devedor)
+        depositar()
+        sacar()
+        pagarMensal()
+====================================================================================
