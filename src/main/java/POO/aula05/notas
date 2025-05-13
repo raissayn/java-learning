@@ -1,13 +1,28 @@
 Classe ContaBanco
-atributos numConta
-          tipo (cc ou cp)
-          dono
-          saldo
-          status (aberta ou fechada)
+atributos + numConta
+          # tipo (cc ou cp)
+          - dono
+          - saldo
+          - status (aberta ou fechada)
 
-metodos abrirConta() (true or false) (corrente ganha 50 reais / poupança 150 reais)
-        fecharConta() (saldo == 0 e não devedor)
-        depositar()
-        sacar()
-        pagarMensal()
+metodos + abrirConta() (true or false) (corrente ganha 50 reais / poupança 150 reais)
+        + fecharConta() (saldo == 0 e não devedor)
+        + depositar()  (status = true)
+        + sacar() (status = true e com saldo)
+        + pagarMensal() (cobrada diretamente do saldo, 12 reais conta corrente e 20 reais conta poupança
+
+        getnumConta()
+        setnumConta() ... para cada um dos atributos
+
+Construtor - conta nova criada
+    - status = false
+    - saldo = 0
 ====================================================================================
+GETTERS E SETTERS -> LEMBRAR
+    //GETTERS E SETTERS
+    public void setNumConta(int n){
+        numConta = n;
+    }
+    public int getNumConta(){
+        return numConta;
+    }
