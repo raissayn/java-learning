@@ -1,0 +1,15 @@
+
+public class ControleRemoto implements ControladorInterface {
+
+
+c1.desligar(); // getter e setter estão privados.
+
+
+public interface ControladorInterface {
+    // Métodos abstratos
+    public abstract void ligar();
+    public abstract void desligar();
+    public abstract void abrirMenu();
+    public abstract void fecharMenu();
+// void pq não retorna
+}

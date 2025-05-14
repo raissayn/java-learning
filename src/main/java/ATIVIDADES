@@ -1,0 +1,75 @@
+Atividades propostas pelo CHATGPT
+Roteiro de Aprendizagem Java POO na Prática
+
+Módulo 1: Fundamentos do Java
+Objetivo: Entender o básico da linguagem antes de mergulhar na POO.
+
+Atividades:
+Instalar o Java (JDK) e o VS Code/IntelliJ.
+Escrever e executar o clássico "Hello World".
+Aprender tipos primitivos, variáveis, operadores, estruturas de decisão (if, switch) e repetição (for, while).
+
+    -> Fazer um mini projeto: Calculadora Simples em Console.
+
+Módulo 2: Introdução à Programação Orientada a Objetos
+Objetivo: Aprender os pilares da POO com exemplos práticos.
+Conceitos: Classe, Objeto, Atributo, Método
+
+Atividades:
+Criar uma classe Pessoa com atributos e métodos (andar(), falar()...).
+Instanciar objetos da classe Pessoa e interagir com seus métodos.
+
+    -> Mini projeto: Agenda de Contatos (classe Contato com nome, telefone e e-mail).
+
+Módulo 3: Encapsulamento
+Objetivo: Proteger dados e usar getters/setters corretamente.
+
+Atividades:
+Usar modificadores de acesso (private, public, protected).
+Criar getters e setters com validações básicas.
+
+    -> Mini projeto: Sistema Bancário Simples (classe Conta com saque, depósito e saldo protegido).
+
+Módulo 4: Herança
+Objetivo: Evitar duplicação de código e reutilizar lógica.
+
+Atividades:
+Criar uma superclasse Animal e subclasses Cachorro, Gato.
+Usar super para chamar métodos da classe mãe.
+
+    -> Mini projeto: Sistema de Cadastro de Funcionários (com Funcionario, Gerente, Estagiario).
+
+Módulo 5: Polimorfismo
+Objetivo: Usar métodos com comportamentos diferentes em subclasses.
+
+Atividades:
+Criar métodos sobrescritos (@Override).
+Usar referências da superclasse para objetos da subclasse.
+
+    -> Mini projeto: Sistema de Pagamento com diferentes formas (Boleto, Cartão, Pix).
+
+Módulo 6: Abstração e Interfaces
+Objetivo: Projetar sistemas de forma mais genérica e reutilizável.
+
+Atividades:
+- Criar classes abstratas e interfaces (interface).
+- Implementar múltiplas interfaces em uma classe.
+
+    -> Mini projeto: Simulador de Veículos (com interface Veiculo, classes Carro, Moto).
+
+Módulo 7: Boas Práticas e Organização de Código
+Objetivo: Melhorar a legibilidade e organização do projeto.
+
+Atividades:
+Organizar classes em pacotes.
+Usar convenções de nomes (CamelCase, etc).
+
+   -> Mini projeto: Aplicativo de Tarefas com múltiplas classes organizadas.
+
+Módulo 8: Projeto Final
+Objetivo: Consolidar todo o conhecimento em um projeto mais completo.
+
+Sugestões de projeto final:
+- Sistema de Biblioteca: com livros, usuários, empréstimos.
+- Sistema de Loja: com produtos, estoque, carrinho de compras.
+- Sistema de Gerenciamento Escolar: com alunos, professores, turmas.
