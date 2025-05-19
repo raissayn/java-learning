@@ -21,5 +21,19 @@ public class Aula11{
         b1.setBolsa(12.5f);
         b1.pagarMensalidade();
         System.out.println(b1.toString());
+
+        Professor p1 = new Professor();
+        p1.setNome("Maria");
+        p1.setSalario(1000f);
+        p1.setEspecialidade("Engenharia");
+        System.out.println(p1.toString());
+
+        Tecnico t1 = new Tecnico();
+        t1.setNome("João");
+        t1.setIdade(35);
+        t1.setCurso("Informática");
+        t1.setRegistroProfissional("AMEND");
+        t1.pagarMensalidade();
+        System.out.println(t1.toString());
     }
 }
