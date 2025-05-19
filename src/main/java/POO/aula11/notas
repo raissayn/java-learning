@@ -18,4 +18,6 @@ MÉTODO FINAL: Não pode ser sobrescrito pelas suas sub-classes. Obrigatoriament
 
 - SOBREPOR SERIA TIPO POLIMORFISMO
 
-
+PALAVRAS CHAVES
+Super-classe, sub-classe, ancestral, descendente, classe raiz, classe folha, generalização, especialização,
+tipos de herança, classe abstrata, método abstrato, classe final, método final.

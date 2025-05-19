@@ -3,10 +3,10 @@ package POO.aula11;
 public abstract class Pessoa {
     protected String nome;
     protected int idade;
-    protected char sexo;
+    protected String sexo;
 
     // METODO FINAL = NÃO PODE SER SOBREESCRITO
-    public metodo final void fazerAniv(){
+    public void fazerAniv(){
         this.idade++;
     }
 
@@ -18,11 +18,11 @@ public abstract class Pessoa {
         this.nome = nome;
     }
 
-    public char getSexo() {
+    public String getSexo() {
         return sexo;
     }
 
-    public void setSexo(char sexo) {
+    public void setSexo(String sexo) {
         this.sexo = sexo;
     }
 
@@ -32,5 +32,14 @@ public abstract class Pessoa {
 
     public void setIdade(int idade) {
         this.idade = idade;
+    }
+
+    @Override
+    public String toString() {
+        return "Pessoa{" +
+                "nome='" + nome + '\'' +
+                ", idade=" + idade +
+                ", sexo='" + sexo + '\'' +
+                '}';
     }
 }
