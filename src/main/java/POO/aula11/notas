@@ -1,0 +1,21 @@
+HERANÇA DE IMPLEMENTAÇÃO (pobre)
+É quando uma classe herda outra só para reutilizar código, mas essa herança não representa um relacionamento real
+
+HERANÇA PARA DIFERENÇA
+Um uso correto da herança em que a subclasse adiciona ou modifica funcionalidades da superclasse, representando diferenças claras entre elas. A subclasse "É UM" tipo da superclasse, mas com comportamentos específicos.
+
+
+SOBRESCRIÇÃO = podemos sobrescrever um método
+
+ABSTRATO E FINAL!!! (importante)
+CLASSE ABSTRATA: Não pode ser instanciada. Só pode servir como progenitora (não pode gerar objetos)
+
+MÉTODO ABSTRATO: Declarado, mas não implementado na progenitora.
+
+CLASSE FINAL: Não pode ser herdada por outra classe. Obrigatoriamente folha.
+
+MÉTODO FINAL: Não pode ser sobrescrito pelas suas sub-classes. Obrigatoriamente herdado.
+
+- SOBREPOR SERIA TIPO POLIMORFISMO
+
+
