@@ -1,0 +1,29 @@
+1) Uma casa está para uma planta arquitetônica assim como um objeto está para uma classe
+2) POO = natural, confiável, reutilizável, extensível, manutenível, oportuno.
+COMERNada
+3) Uma classe NÃO é instância de um objeto!!! (objeto é instância de uma classe)
+4) Interface = define o que uma entidade pode fazer com o objeto
+
+---------------------------------
+
+O compilador fornece um construtor padrão sem parâmetros em qualquer classe que não inclui explicitamente um construtor.
+Compartilhar um design comum = classe abstrata
+Abstrato = declarado mas não implementado
+protected = nível intermediário entre public e private
+public não pode descer de nível e private pode subir o nível.
+
+---------------------------------
+
+Especialização permite que você remova da classe filha comportamentos e atributos.
+
+O polimorfismo permite que um único nome expresse muitos comportamentos diferentes. Um tipo de polimorfismo é
+sobrecarga, que permite que possa ser declarado o mesmo método várias vezes, sendo que cada declaração difere simplesmente
+no número e tipo de argumentos.
+
+ASSINATURA = nome, quantidade de parâmetros, os tipos dos parâmetros
+
+Sobrecarga não pode repetir a mesma assinatura, ou seja a quantidade e tipo de parâmetros.
+Sobreposição = @Override e mesma assinatura, mesmo parâmetros (retorno não faz diferença)!
+
+Classe final = não pode herdar
+

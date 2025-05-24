@@ -35,7 +35,7 @@ public class Cachorro extends Mamifero {
 
     public void reagir(int idade, float peso){
         if (idade < 5){
-            if (peso < 20){
+            if (peso < 10){
                 System.out.println("Abanar");
             }else {
                 System.out.println("Latir");
